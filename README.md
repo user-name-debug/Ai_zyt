@@ -2,19 +2,21 @@
 本项目基于 PyTorch 深度学习框架，使用 ResNet50d 模型完成多类别花卉图像的分类任务，包含数据预处理、模型训练、评估与可视化分析，支持迁移学习和多种指标评估，适用于图像分类入门学习与项目实战。
 项目结构
 flower_classification/
-├── train.py                # 模型训练主程序
-├── visual.py              # 多张图像预测脚本
-├── config.py               # 参数配置文件
-├── torchutils.py           # 工具函数，如评价指标等
-├── dataset/                # 存放数据集
-│   └── flower_data/
-│       ├── train/
-│       ├── valid/
-│       └── test/
+├──FLOWER
+│ 	── ROC.py              # 绘制ROC曲线脚本
+│ 	── test.py               # 测试模型性能脚本
+│ 	── torchutils.py          # 工具函数，如评价指标等  
+│ 	── train.py               # 模型训练主程序
+│ 	── visual.py             # 多张图像预测脚本
+│ 	── visualize_data.py     # 数据处理可视化脚本     
+│ 	── flower_data/          # 存放数据集
+│       	 ├── train/
+│       	 ├── valid/
+│      	 └── test/
 ├── model/                  # 模型权重保存路径
-├── outputs/                # 存放日志与可视化结果
-├── requirements.txt        # 项目依赖包
-└── README.md               # 项目说明文档
+│  ── outputs/               # 存放日志与可视化结果
+│	── requirements.txt         # 项目依赖包
+└── README.md             # 项目说明文档
 环境配置
 软件环境
 操作系统：Windows 11 x64
@@ -66,6 +68,3 @@ ROC 曲线
 若遇到 OSError 或 FileNotFoundError，请检查路径和目录结构。
 项目总结
 本项目作为人工智能课程设计实践任务，从数据准备、模型训练、到结果评估与可视化，完整呈现了图像分类的基本流程，适用于初学者与相关课程作业复现。
-
-
-
